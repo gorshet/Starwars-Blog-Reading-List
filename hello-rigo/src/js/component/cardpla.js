@@ -1,37 +1,31 @@
 import React from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-export class Cardcha extends React.Component {
+export class Cardpla extends React.Component {
 	render() {
 		return (
 			<div className="container ">
 				<div className="card-deck ">
 					<Context.Consumer>
 						{({ store, actions }) => {
-							return store.characters.map((item, index) => {
+							return store.planets.map((item, index) => {
 								return (
 									<div key={index} className="card" style={{ width: 300 }}>
 										<img
-											src="https://www.car-revs-daily.com/wp-content/uploads/2015/12/FCA-Star-Wars-16-400x200.jpg"
+											src="https://assets.metrolatam.com/mx/2013/05/21/abandoned-star-wars-tatooine-movie-set-tunisia-desert-lars-homestead-6-400x200.jpg"
 											className="card-img-top"
 											alt="..."
 										/>
 										<div className="card-body">
 											<h7 className="card-title"> {item.name} </h7>
 											<p className="card-text">
-												{" "}
-												Gender: {item.gender} <br /> Hair Color: {item.hair_color} <br /> Eye
-												color:
-												{item.eye_color}
+												Population: {item.population} <br /> Terrain:
+												{item.terrain}
 											</p>
-
-											<Link to={"/single-people/" + index + "/" + item.name}>
-												<button className="btn btn-primary">Details</button>
+											<Link to={"/single-planets/" + index + "/" + item.name}>
+												<button className="btn btn-success">Details</button>
 											</Link>
-											<button
-												onClick={() => actions.markFavorite(index, item.name)}
-												type="button"
-												className="btn btn-outline-warning">
+											<button type="button" className="btn btn-outline-warning">
 												<i className="far fa-heart" />
 											</button>
 										</div>

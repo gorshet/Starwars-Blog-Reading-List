@@ -6,11 +6,20 @@ const getState = ({ getStore, setStore }) => {
 			favorites: []
 		},
 		actions: {
+			removeFavorites: (elementId, index) => {
+				const store = getStore();
+				setStore({ favorites: store.favorites.filter((item, i) => i !== index) });
+			},
+
 			getCharacter: (name, id) => {},
 
 			getPlanet: (name, id) => {},
 
-			markFavorite: character => {}
+			markFavorite: (elementId, name, gender) => {
+				const store = getStore();
+				setStore({ favorites: store.favorites.concat({ Index: elementId, name: name, Gender: gender }) });
+				//console.log("Index:", elementId);
+			}
 		}
 	};
 };

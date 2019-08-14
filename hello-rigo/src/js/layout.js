@@ -6,7 +6,8 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
-
+import { SinglePla } from "./component/singlePla";
+import { SingleCha } from "./component/singleCha";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -26,6 +27,8 @@ export class Layout extends React.Component {
 							<Route exact path="/" component={Home} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
+							<Route path="/single-people/:theindex/:thename" component={SingleCha} />
+							<Route path="/single-planets/:theindex/:thename" component={SinglePla} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 						<Footer />

@@ -1,8 +1,54 @@
 .logo{
     background:#F8F9FA;
     width: 5em;
+    margin-left: 140px;
 }
 
 .navbar{
     height:100px;
+    padding: 2.5rem 1rem;
 }
+
+.btn-outline-primary{
+float: left;
+margin-top: 15px;
+}
+
+.btn-outline-warning{
+    float: right;
+    margin-top: 15px;
+}
+
+.card{
+    margin-left: 50px;
+}
+
+h5{
+    margin-right: 29em;
+    margin-bottom: 35px;
+    color: red;
+}
+
+h2{
+    margin-left: 0.4em;
+    padding-top: 24px;
+    color: red;
+}
+
+h3{
+    margin-left: 1rem;
+    font-size: 2rem;
+    padding-top: 42px;
+    color: red;
+}
+
+.card-deck{
+    display: flex;
+    width: 3000px;
+    height: 400px;
+}
+
+.container{
+   overflow: scroll;
+}
+
