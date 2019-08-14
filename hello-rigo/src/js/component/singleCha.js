@@ -17,7 +17,7 @@ export class SingleCha extends React.Component {
 											<img src="http://placehold.it/800x600" className="card-img-top" />
 										</div>
 										<div className="col-6">
-											<h1>{store.characters[this.props.match.params.theindex].name}</h1>
+											<h1>{store.characters[this.props.match.params.myId].name}</h1>
 											<div className="text-wrapper">
 												<LoremIpsum p={1.5} />
 											</div>
@@ -28,7 +28,7 @@ export class SingleCha extends React.Component {
 													<strong>Name</strong>
 												</div>
 												<div className="text-danger">
-													{store.characters[this.props.match.params.theIndex].name}
+													{store.characters[this.props.match.params.theindex].name}
 												</div>
 											</div>
 											<div className="col-2">
@@ -36,7 +36,7 @@ export class SingleCha extends React.Component {
 													<strong>Climate</strong>
 												</div>
 												<div className="text-danger">
-													{store.characters[this.props.match.params.theIndex].climate}
+													{store.characters[this.props.match.params.theindex].climate}
 												</div>
 											</div>
 											<div className="col-2">
@@ -44,7 +44,7 @@ export class SingleCha extends React.Component {
 													<strong>Population</strong>
 												</div>
 												<div className="text-danger">
-													{store.characters[this.props.match.params.theIndex].population}
+													{store.characters[this.props.match.params.theindex].population}
 												</div>
 											</div>
 											<div className="col-2">
@@ -52,7 +52,7 @@ export class SingleCha extends React.Component {
 													<strong>Orbital Period</strong>
 												</div>
 												<div className="text-danger">
-													{store.characters[this.props.match.params.theIndex].orbital_period}
+													{store.characters[this.props.match.params.theindex].orbital_period}
 												</div>
 											</div>
 											<div className="col-2">
@@ -60,7 +60,7 @@ export class SingleCha extends React.Component {
 													<strong>Rotation Period</strong>
 												</div>
 												<div className="text-danger">
-													{store.characters[this.props.match.params.theIndex].rotation_period}
+													{store.characters[this.props.match.params.theindex].rotation_period}
 												</div>
 											</div>
 											<div className="col-2">
@@ -68,7 +68,7 @@ export class SingleCha extends React.Component {
 													<strong>Diameter</strong>
 												</div>
 												<div className="text-danger">
-													{store.characters[this.props.match.params.theIndex].diameter}
+													{store.characters[this.props.match.params.theindex].diameter}
 												</div>
 											</div>
 										</div>
