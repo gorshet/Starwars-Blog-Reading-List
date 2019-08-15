@@ -25,7 +25,10 @@ export class Cardpla extends React.Component {
 											<Link to={"/single-planets/" + index + "/" + item.name}>
 												<button className="btn btn-success">Details</button>
 											</Link>
-											<button type="button" className="btn btn-outline-warning">
+											<button
+												onClick={() => actions.markFavorite(index, item.name)}
+												type="button"
+												className="btn btn-outline-warning">
 												<i className="far fa-heart" />
 											</button>
 										</div>
